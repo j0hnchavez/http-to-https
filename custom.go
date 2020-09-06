@@ -1,4 +1,4 @@
-package make_proxy
+package custom
 
 import(
     "log"
@@ -31,5 +31,3 @@ func MakeProxy(og, target string){
     log.Fatal(http.ListenAndServeTLS(target, cert, key, nil))
 
 }
-
-// test
